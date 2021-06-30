@@ -1,0 +1,8 @@
+
+
+#headBanner {
+    height: 100%;
+    width: 100%;
+    background-image: url("/img/headerBackground.jpg");
+    border: 2px solid #3f3f3f
+}
