@@ -1,8 +1,253 @@
 
+.maxWidth {
+    max-width: 1300px;
+    padding: 0, 80px;
+    margin: auto;
+}
 
-#headBanner {
-    height: 100%;
+/* navbar styling */
+.navbar {
+    position: fixed;
     width: 100%;
-    background-image: url("/img/headerBackground.jpg");
-    border: 2px solid #3f3f3f
+    /*background-color: #20ffcf;*/
+    padding: 30px 0;
+    transition: all 0.3s ease;
+
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    width: 100%;
+    background-color: #262626;
+}
+
+.navbar .maxWidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 300;
+    color: color #292929;
+    
+}
+
+.navbar .logo.sticky a {
+    color: #20ffcf;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar .logo a:visited{
+    font-size: 35px;
+    font-weight: 300;
+    color: color #292929;
+    
+}
+
+.navbar .logo a span{
+    font-size: 35px;
+    font-weight: 300;
+    color: color #20ffcf;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.navbar .menu li a:hover {
+    color: #20ffcf;
+    background-color: #292929;
+}
+
+.navbar .menu.sticky li a {
+    color: #20ffcf;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.navbar .menu.sticky li a:hover {
+    color: #292929;
+    background-color: #20ffcf;
+}
+
+
+.menu-btn img{
+    display: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+}
+/* Home section */
+
+.home {
+    display: flex;
+    /* background: url("/img/headerBackground.jpg") no-repeat center; */
+    background-color: rgb(224, 253, 247);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #000;
+    min-height: 500px;
+}
+
+.home .maxWidth {
+    margin: auto 0 auto 120px;
+}
+
+.home .homeContent .text1 {
+    font-size: 27px;
+}
+.home .homeContent .text2 {
+    font-size: 75px;
+    font-weight: 400;
+    margin-left: -3px;
+    margin-bottom: 10px;
+    text-decoration: wavy;
+    
+}
+.home .homeContent .text3 {
+    font-size: 40px;
+}
+
+.home .homeContent .text3 span {
+    position: relative;
+    left: 10px;
+    color: #20ffcf;
+    font-weight: 800;
+    background-color: #292929;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+/* responsive media query */
+@media (max-width: 991px){
+    
+    .maxWidth {
+        padding: 0, 50px;
+    }
+
+    .menu-btn img.dark{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn img.light{
+        display: none;
+    }
+    
+    .menu-btn.sticky img.dark{
+        display: none;
+    }
+    .menu-btn.sticky img.light{
+        display: block;
+    }
+     
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #262626;
+        text-align: center;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        font-size: 25px;
+        padding: 10px;
+        color: #20ffcf;
+    }
+
+    .navbar .menu li a:hover{
+        display: inline-block;
+        font-size: 25px;
+        padding: 10px;
+        color: #262626;
+        background-color: #20ffcf;
+    }
+}
+
+/* About Me */
+
+.about .maxWidth h1{
+    border-radius: 10px;
+    background-color: #262626;
+    color: #20ffcf;
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 20px auto 20px auto;
+    max-width: 30%;
+}
+    
+
+.about .maxWidth .aboutContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+}
+
+.about .maxWidth .aboutContent p{
+    font-size: 20px;
+
+    
+}
+
+.about .maxWidth .aboutContent img {
+    height: 400%;
+    width: 40%;
+    border-radius: 200px;
+    border: 3px solid #262626;
+    margin-left: 50px;
+    
+
+}
+
+
+/* Footer */
+.footer {
+    height: 500px;
+    background-color: #262626;
 }
