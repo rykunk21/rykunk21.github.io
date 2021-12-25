@@ -1,0 +1,31 @@
+.divider {
+    display: block;
+    height: 35px;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.gradient{
+    background: linear-gradient(92deg, #00c49a, #6969b3, #b3b3b3,#00c49a, #6969b3);
+    background-size: 600% 600%;
+
+    -webkit-animation: dividerAnimation 11s ease infinite;
+    -moz-animation: dividerAnimation 11s ease infinite;
+    animation: dividerAnimation 11s ease infinite;
+}
+ 
+@-webkit-keyframes dividerAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes dividerAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes dividerAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
