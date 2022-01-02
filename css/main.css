@@ -1,7 +1,48 @@
+:root {
+    --background: #2d2d2dff;
+    --white: #fcfcfcff;
+    --highlight: #828e82ff;
+    --main1-green: #00c49aff;
+    --main2-purple: #6969b3ff;
+}
+
+
 * {
+    font-family: Montserrat;
+    font-weight: 100;
+    color: var(--white);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+}
+
+.vanish {
+    display: none;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1em;
 }
