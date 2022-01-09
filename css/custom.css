@@ -43,7 +43,7 @@ nav button:hover{
 main{
     display: flex;
     justify-content: center;
-    height: 625px;
+    height: 82vh;
 } 
 
 .mainIcon {
